@@ -57,7 +57,7 @@ while True:
         print('Camera not connected...!')
         continue
     frame = cv.flip(frame,1)
-    lmlist, label = getHandlandMarks(frame, draw=True)
+    lmlist, label = getHandlandMarks(frame, draw=False)
     if lmlist:
         # print(lmlist)
         fc = fingerCount(lmlist=lmlist, label=label)
